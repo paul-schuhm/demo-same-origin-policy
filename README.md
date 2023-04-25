@@ -1,5 +1,16 @@
 # Démo `Same Origin Policy` et `CORS`
 
+>Cette démo est complètement et *ouvertement* inspirée de [l'excellente présentation de la SOP par Kirk Jackson (2017)](https://www.youtube.com/watch?v=zul8TtVS-64&list=PLS3XEhTy6-Ale8Et6pxRR2I3LYNt8-rX3&index=19&t=2632s), que je vous invite à regarder.
+
+- [Démo `Same Origin Policy` et `CORS`](#démo-same-origin-policy-et-cors)
+  - [Pré-requis](#pré-requis)
+  - [Lancer la démo](#lancer-la-démo)
+  - [Stopper la démo](#stopper-la-démo)
+  - [Références](#références)
+
+
+La [*Same Origin Policy* (SOP)](https://developer.mozilla.org/en-US/docs/Web/Security/Same-origin_policy) est un ensemble de règles plus ou moins bien défini lorsque Javascript a été introduit en 1995 dans les navigateurs web. Nous allons voir ce qu'est une origine, comment la SOP fonctionne et pourquoi elle est fondamentale du point de vue de la sécurité côté client, et protège contre de nombreuses attaques sur le web.
+
 ## Pré-requis
 
 - php
@@ -39,3 +50,9 @@ fuser -k 5001/tcp 5002/tcp
 ~~~
 ./stop-demo.sh
 ~~~
+
+## Références
+
+- [MDN: Same Origin Policy (SOP)](https://developer.mozilla.org/en-US/docs/Web/Security/Same-origin_policy), les contraintes *cross-origin* implémentées côté *client*
+- [MDN: Cross Origin Resource Sharing (CORS)](https://developer.mozilla.org/en-US/docs/Web/HTTP/CORS), les contraintes *cross-origin* implémentées côté *serveur*
+- [Same-origin policy: The core of web security @ OWASP Wellington](https://www.youtube.com/watch?v=zul8TtVS-64&list=PLS3XEhTy6-Ale8Et6pxRR2I3LYNt8-rX3&index=19&t=2632s), excellente présentation de Kirk Jackson de la Same Origin Policy avec démonstrations à l'appui. **À regarder**.
